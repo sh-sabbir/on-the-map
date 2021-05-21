@@ -7557,6 +7557,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   background-image: url(e35bf2ef5f065e5b96e81b82e4af8f83.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   color: #fff; }
@@ -7640,9 +7641,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   #slider-content::after {
     content: ' ';
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
-    height: 139px;
+    height: 140px;
     background: #26353B;
     z-index: 0; }
   #slider-content .container {
@@ -7660,6 +7661,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
         font-size: 14px;
         line-height: 26px;
         color: #646D70; }
+      #slider-content .container .content-panel button {
+        width: 90px;
+        padding: 10px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #606B74;
+        border-color: #606B74; }
+        #slider-content .container .content-panel button:hover {
+          color: #fff; }
     #slider-content .container .slider-panel {
       margin-top: -76px;
       position: relative; }
@@ -7669,6 +7681,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
         #slider-content .container .slider-panel .carousel .carousel-indicators [data-bs-target] {
           height: 8px;
           width: 8px;
+          margin: 0 4px;
+          border: none;
           border-radius: 100%; }
 
 #innovatie {
@@ -7691,9 +7705,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   #features .feature-list {
     max-width: 370px;
     margin-left: auto; }
+    #features .feature-list .feature-item {
+      max-width: 155px; }
   #features img {
     max-width: 355px;
-    margin-right: auto; }
+    margin-right: auto;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
   #features h3, #features .h3 {
     font-size: 18px;
     line-height: 23px;
@@ -7704,4 +7721,26 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     mix-blend-mode: normal;
     opacity: 0.7;
     margin-bottom: 37px; }
+
+footer {
+  padding: 32px 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px; }
+  footer a {
+    color: inherit;
+    text-decoration: none; }
+    footer a:hover {
+      color: #fff; }
+  footer ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none; }
+    footer ul li {
+      margin-left: 30px; }
+      footer ul li:first-child {
+        margin-left: 0px; }
 

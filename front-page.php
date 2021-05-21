@@ -6,7 +6,7 @@
                     <div class="col-12 col-lg-6 content-panel">
                         <h2>Duurzame materialen</h2>
                         <p>Alle EcoCabins hebben een hoge isolatiewaarde, worden geproduceerd met indien mogelijk duurzame en/of natuurlijke materialen en hebben als opvallende uiterlijke kenmerk de ‘ronde hoeken’, mogelijk gemaakt door het specifieke materiaalgebruik. De voordelen van bouwen met hout zijn legio: hout is licht, flexibel, isoleert goed en bouwt snel en efficiënt.</p>
-                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                        <button type="button" class="btn btn-outline-secondary">Lees meer</button>
                     </div>
                     <div class="col-12 col-lg-6 slider-panel">
                         <div id="slider" class="carousel slide" data-bs-ride="carousel">
@@ -67,7 +67,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
-                                <div class="feature-item">
+                                <div class="feature-item ms-auto">
                                     <h3>Glaswol isolatie</h3>
                                     <p>De draagconstructies van EcoCabins bestaan uit hout. Hout is duurzaam en.</p>
                                 </div>
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
-                                <div class="feature-item">
+                                <div class="feature-item ms-auto">
                                     <h3>Triple glas</h3>
                                     <p>De draagconstructies van EcoCabins bestaan uit hout. Hout is duurzaam en.</p>
                                 </div>  
@@ -91,7 +91,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
-                                <div class="feature-item">
+                                <div class="feature-item ms-auto">
                                     <h3>Infrarood vloer</h3>
                                     <p>De draagconstructies van EcoCabins bestaan uit hout. Hout is duurzaam en.</p>
                                 </div>
