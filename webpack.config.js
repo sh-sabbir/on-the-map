@@ -4,7 +4,7 @@ var path = require('path');
 
 // change these variables to fit your project
 const jsPath= './src/js';
-const cssPath = './src/scss';
+const cssPath = './src/sass';
 const outputPath = 'assets';
 const localDomain = 'http://wptest.test';
 const entryPoints = {
