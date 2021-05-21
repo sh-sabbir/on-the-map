@@ -9,7 +9,7 @@
     </head>
 <body <?php body_class( 'class-name' ); ?>>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo site_url();?>">
                     <img src="<?php echo get_template_directory_uri();?>/assets/logo.svg" alt="<?php echo get_bloginfo( 'name' );?>">
@@ -38,11 +38,11 @@
         <div class="header-content">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-12 col-lg-7">
+                    <div class="col-12 col-md-7">
                         <span class="title">Duurzame tiny huisjes</span>
                         <h2 class="heading">Een ecologisch tiny huisje is zoveel mogelijk opgebouwd uit duurzame natuurlijke materialen</h2>
                     </div>
-                    <div class="col-12 col-lg-5 text-center">
+                    <div class="col-12 col-md-5 text-center">
                         <a class="d-inline-flex justify-content-center align-items-center" href="">
                             <span class="icon"><img src="<?php echo get_template_directory_uri();?>/assets/btn_play.svg" alt=""></span>
                             <span>Bekijk de film</span>

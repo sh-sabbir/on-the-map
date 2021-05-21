@@ -13,12 +13,31 @@
             background: transparent
             padding-top: 35px
 
+            .navbar-toggler
+                color: #fff
+                
             .navbar-brand
                 padding: 0
                 display: inline-flex
 
             .navbar-collapse
                 align-self: center
+                transition: all 0.4s
+
+                &.collapsing
+                    transition: none
+
+                &.show
+                    z-index: 99
+
+                    ul
+                        background: #fff
+                        padding: 30px
+                        margin-top: 16px
+
+                    .nav-item
+                        .nav-link
+                            color: $dark_green
 
             .nav-item
                 .nav-link
@@ -52,6 +71,10 @@
             color: #fff
             font-size: 30px
             line-height: 38px
+
+            @include mobile
+                max-width: 80%
+                margin-bottom: 30px
 
         a
             text-decoration: none
@@ -131,6 +154,13 @@
         border: 1px solid #000
         box-shadow: 0 4px 4px rgba(0,0,0,0.25)
 
+        @include tablet
+            width: 80%
+
+        @include mobile
+            display: none
+        
+
     &::after
         content: ' '
         position: absolute
@@ -148,10 +178,15 @@
             padding-top: 31px
             padding-bottom: 31px
 
+            @include mobile
+                text-align: center
+
             h2
                 color: $dark_green
                 font-size: 30px
                 line-height: 38px
+
+                
             
             p
                 font-weight: normal
@@ -176,9 +211,15 @@
             margin-top: -76px
             position: relative
 
+            @include mobile
+                margin-top: 0px
+
             .carousel
                 max-width: 325px
                 margin-left: auto
+                
+                @include mobile
+                    margin-right: auto
 
                 .carousel-indicators [data-bs-target]
                     height: 8px
@@ -189,6 +230,9 @@
 
 #innovatie
     padding: 72px 0 78px
+
+    @include mobile
+        text-align: center
 
     h2
         font-size: 30px
@@ -210,6 +254,9 @@
     .feature-list
         max-width: 370px
         margin-left: auto
+        @include mobile
+            margin-right: auto
+            margin-top: 36px
 
         .feature-item
             max-width: 155px
@@ -218,6 +265,10 @@
         max-width: 355px
         margin-right: auto
         box-shadow: 0 4px 4px rgba(0,0,0,0.25)
+
+        @include mobile
+            display: block
+            margin-left: auto
 
     h3
         font-size: 18px
@@ -253,8 +304,18 @@ footer
         justify-content: flex-end
         list-style: none
 
+        @include mobile
+            justify-content: center
+
         li
             margin-left: 30px
 
             &:first-child
                 margin-left: 0px
+
+    @include mobile
+        .col-12
+            margin-bottom: 20px
+
+            &:last-child
+                margin-bottom: 0px

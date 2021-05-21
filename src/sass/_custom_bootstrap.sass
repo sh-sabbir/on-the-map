@@ -52,3 +52,16 @@ h1,h2,h3,h4,h5,h6
         -o-transform: scale(2)
         transform: scale(2)
         opacity: 0
+
+
+$tablet-width: 1000px;
+$mobile-width: 425px;
+
+@mixin tablet
+  @media (min-width: #{$mobile-width + 1px}) and (max-width: #{$tablet-width})
+    @content;
+  
+
+@mixin mobile
+  @media (max-width: #{$mobile-width})
+    @content;

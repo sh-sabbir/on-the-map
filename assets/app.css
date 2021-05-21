@@ -7539,11 +7539,24 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     right: 0;
     background: transparent;
     padding-top: 35px; }
+    .front-page header .navbar .navbar-toggler {
+      color: #fff; }
     .front-page header .navbar .navbar-brand {
       padding: 0;
       display: inline-flex; }
     .front-page header .navbar .navbar-collapse {
-      align-self: center; }
+      align-self: center;
+      transition: all 0.4s; }
+      .front-page header .navbar .navbar-collapse.collapsing {
+        transition: none; }
+      .front-page header .navbar .navbar-collapse.show {
+        z-index: 99; }
+        .front-page header .navbar .navbar-collapse.show ul {
+          background: #fff;
+          padding: 30px;
+          margin-top: 16px; }
+        .front-page header .navbar .navbar-collapse.show .nav-item .nav-link {
+          color: #26353B; }
     .front-page header .navbar .nav-item .nav-link {
       color: #fff;
       padding: 0 10px;
@@ -7573,6 +7586,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     color: #fff;
     font-size: 30px;
     line-height: 38px; }
+    @media (max-width: 425px) {
+      .front-page .header-content .heading {
+        max-width: 80%;
+        margin-bottom: 30px; } }
   .front-page .header-content a {
     text-decoration: none;
     color: #fff;
@@ -7638,6 +7655,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     z-index: 1;
     border: 1px solid #000;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+    @media (min-width: 426px) and (max-width: 1000px) {
+      #slider-content::before {
+        width: 80%; } }
+    @media (max-width: 425px) {
+      #slider-content::before {
+        display: none; } }
   #slider-content::after {
     content: ' ';
     position: absolute;
@@ -7652,6 +7675,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     #slider-content .container .content-panel {
       padding-top: 31px;
       padding-bottom: 31px; }
+      @media (max-width: 425px) {
+        #slider-content .container .content-panel {
+          text-align: center; } }
       #slider-content .container .content-panel h2, #slider-content .container .content-panel .h2 {
         color: #26353B;
         font-size: 30px;
@@ -7675,9 +7701,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     #slider-content .container .slider-panel {
       margin-top: -76px;
       position: relative; }
+      @media (max-width: 425px) {
+        #slider-content .container .slider-panel {
+          margin-top: 0px; } }
       #slider-content .container .slider-panel .carousel {
         max-width: 325px;
         margin-left: auto; }
+        @media (max-width: 425px) {
+          #slider-content .container .slider-panel .carousel {
+            margin-right: auto; } }
         #slider-content .container .slider-panel .carousel .carousel-indicators [data-bs-target] {
           height: 8px;
           width: 8px;
@@ -7687,6 +7719,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 #innovatie {
   padding: 72px 0 78px; }
+  @media (max-width: 425px) {
+    #innovatie {
+      text-align: center; } }
   #innovatie h2, #innovatie .h2 {
     font-size: 30px;
     line-height: 38px;
@@ -7705,12 +7740,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   #features .feature-list {
     max-width: 370px;
     margin-left: auto; }
+    @media (max-width: 425px) {
+      #features .feature-list {
+        margin-right: auto;
+        margin-top: 36px; } }
     #features .feature-list .feature-item {
       max-width: 155px; }
   #features img {
     max-width: 355px;
     margin-right: auto;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+    @media (max-width: 425px) {
+      #features img {
+        display: block;
+        margin-left: auto; } }
   #features h3, #features .h3 {
     font-size: 18px;
     line-height: 23px;
@@ -7739,8 +7782,16 @@ footer {
     display: flex;
     justify-content: flex-end;
     list-style: none; }
+    @media (max-width: 425px) {
+      footer ul {
+        justify-content: center; } }
     footer ul li {
       margin-left: 30px; }
       footer ul li:first-child {
         margin-left: 0px; }
+  @media (max-width: 425px) {
+    footer .col-12 {
+      margin-bottom: 20px; }
+      footer .col-12:last-child {
+        margin-bottom: 0px; } }
 
