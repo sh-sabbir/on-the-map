@@ -1,33 +1,31 @@
 @import "custom_bootstrap"
 
-/** Header Style **/
-.front-page
-    header
-        position: relative
+/** Header: Common **/
+header
+    position: relative
 
-        .navbar
-            position: absolute
-            top: 0
-            left: 0
-            right: 0
-            background: transparent
-            padding-top: 35px
+    .navbar-expand-md 
+        .navbar-nav
+            align-items: center
 
-            .navbar-toggler
-                color: #fff
-                
-            .navbar-brand
-                padding: 0
-                display: inline-flex
+    .navbar
 
-            .navbar-collapse
-                align-self: center
-                transition: all 0.4s
+        .navbar-toggler
+            color: #fff
+            
+        .navbar-brand
+            padding: 0
+            display: inline-flex
 
-                &.collapsing
-                    transition: none
+        .navbar-collapse
+            align-self: center
+            // transition: all 0.4s
 
-                &.show
+            &.collapsing
+                transition: none
+
+            &.show
+                @include mobile
                     z-index: 99
 
                     ul
@@ -39,13 +37,49 @@
                         .nav-link
                             color: $dark_green
 
-            .nav-item
+        .nav-item
+            @include mobile
+                margin: 5px 0
+
+            &.btn
                 .nav-link
-                    color: #fff
-                    padding: 0 10px
-                    margin: 0 10px
-                    font-size: 12px
-                    font-weight: 500
+                    width: 90px
+                    padding: 10px 15px
+                    background: #FFFFFF
+                    border-radius: 4px
+                    color: #606B74
+
+                    @include mobile
+                        border: 1px solid $dark_green
+
+                    &:hover
+                        color: #FFFFFF
+                        background: $dark_green
+                        text-decoration: none
+            .nav-link
+                color: #fff
+                padding: 5px 10px
+                margin: 0 10px
+                font-size: 12px
+                font-weight: 500
+
+                @include mobile
+                    padding: 5px 10px
+
+                &:hover
+                    opacity: 1
+                    text-decoration: underline
+
+/** Header Style **/
+.front-page
+    header
+        .navbar
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            background: transparent
+            padding-top: 35px
 
     .header-content
         height: 600px
@@ -135,7 +169,11 @@
                     margin: 10px 0
 
                     a
-                        padding: 10px 0
+                        padding: 10px 5px
+                        text-decoration: none
+                        
+                        &:hover
+                            text-decoration: underline
 
 #slider-content
     position: relative
@@ -186,8 +224,7 @@
                 font-size: 30px
                 line-height: 38px
 
-                
-            
+
             p
                 font-weight: normal
                 font-size: 14px
@@ -260,6 +297,8 @@
 
         .feature-item
             max-width: 155px
+            @include mobile
+                padding: 5px
 
     img
         max-width: 355px
@@ -269,11 +308,15 @@
         @include mobile
             display: block
             margin-left: auto
+            width: 100%
 
     h3
         font-size: 18px
         line-height: 23px
         margin-bottom: 4px
+
+        @include mobile
+            font-size: 16px
 
     p 
         font-size: 12px
@@ -319,3 +362,18 @@ footer
 
             &:last-child
                 margin-bottom: 0px
+
+
+/* Page style */
+body.page
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+    
+
+    main
+        background: #fff
+        color: $dark_green
+        flex-grow: 1
+        padding: 30px 0

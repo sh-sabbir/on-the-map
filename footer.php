@@ -1,4 +1,3 @@
-    <?php wp_footer();?>
     <footer>
         <div class="container">
             <div class="row align-items-center">
@@ -23,5 +22,6 @@
             </div>
         </div>
     </footer>
+    <?php wp_footer();?>
     </body>
 </html>
