@@ -1,3 +1,3 @@
 import "../sass/style.sass"
 
-import "bootstrap"
+import {Carousel} from "bootstrap"
